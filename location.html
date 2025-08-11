@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Event Center Website</title>
 		<style>
+			body {
+				text-align: center;
+			}
 			ul {
 				list-style-type: none;
 			}
@@ -14,6 +17,11 @@
 				justify-content: space-evenly;
 				flex-wrap: wrap;
 				align-items: center;
+			}
+			@media screen and(max-width: 600px) {
+				body {
+					flex-direction: column;
+				}
 			}
 		</style>
 	</head>
@@ -27,7 +35,17 @@
 				<li><a href="menu.html">Menu</a></li>
 			</ul>
 		</nav>
-		<h1>Location Page</h1>
-		<p>This is my first paragraph.</p>
+		<h1>Location</h1>
+		<p><b>Hours:</b> Open 24/7</p>
+		<p><b>Directions:</b> Disneyland Resort Anaheim, CA United States 92802</p>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6630.016805859404!2d-117.92154912395397!3d33.81209623037203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7d12b3b5e6b%3A0x2ef62f8418225cfa!2sDisneyland%20Park!5e0!3m2!1sen!2sus!4v1754943437347!5m2!1sen!2sus"
+			width="600"
+			height="450"
+			style="border: 0"
+			allowfullscreen=""
+			loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"
+		></iframe>
 	</body>
 </html>

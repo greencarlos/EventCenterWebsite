@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contact.html</title>
 		<style>
+			body {
+				text-align: center;
+			}
 			ul {
 				list-style-type: none;
 			}
@@ -14,6 +17,10 @@
 				justify-content: space-evenly;
 				flex-wrap: wrap;
 				align-items: center;
+			}
+			.submit:hover {
+				background-color: green;
+				color: white;
 			}
 		</style>
 	</head>
@@ -25,7 +32,47 @@
 			<li><a href="location.html">Location</a></li>
 			<li><a href="menu.html">Menu</a></li>
 		</ul>
-		<h1>Contact Page</h1>
-		<p>This is my first paragraph.</p>
+		<h1>Contact</h1>
+		<form class="form" action="submission.html">
+			<div class="container">
+				<label for="name">Name:</label>
+				<br/>
+				<input type="text" id="name" placeholder="Enter name" />
+				<br />
+				<br />
+
+				<label for="email">Email:</label>
+				<br/>
+				<input type="text" id="email" placeholder="Enter email" required />
+				<br />
+				<br />
+
+				<label for="name">Name:</label>
+				<br/>
+				<input type="text" id="name" placeholder="Enter name" />
+				<br />
+				<br />
+
+				<label for="country">Country:</label>
+				<br/>
+				<select id="country" name="coutry">
+					<option value="upa">United Places of America</option>
+					<option value="canadad">Canadad</option>
+					<option value="ck">Combined Kingdom</option>
+					<option value="auo">Australio</option>
+				</select>
+				<br />
+				<br />
+
+				<label for="message">Message:</label>
+				<br/>
+				<textarea id="message">What can we help with?</textarea>
+
+				<br />
+				<br />
+				<br />
+			</div>
+			<input class="submit" type="submit" value="Submit" />
+		</form>
 	</body>
 </html>

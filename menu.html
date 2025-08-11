@@ -5,15 +5,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Event Center Website</title>
 		<style>
+			body {
+				text-align: center;
+			}
 			ul {
 				list-style-type: none;
+			}
+			img {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+			}
+			.table {
+				display: flex;
+				justify-content: space-evenly;
 			}
 			.list {
 				display: flex;
 				flex-direction: row;
-				justify-content: space-evenly;
 				flex-wrap: wrap;
 				align-items: center;
+				justify-content: space-evenly;
+			}
+			td:hover,
+			img {
+				height: 200px;
+				width: 200px;
+				font-size: 50px;
+				border-radius: 50%;
+			}
+			@media screen and(max-width: 300px) {
+				table {
+					display: flex;
+					flex-direction: column;
+				}
 			}
 		</style>
 	</head>
@@ -27,7 +52,82 @@
 				<li><a href="menu.html">Menu</a></li>
 			</ul>
 		</nav>
-		<h1>Menu Page</h1>
-		<p>This is my first paragraph.</p>
+		<h1>Menu</h1>
+		<table class="table">
+			<tr>
+				<th>Appetizers</th>
+				<th>Main Dishes</th>
+				<th>Desserts</th>
+			</tr>
+			<tr>
+				<td>
+					Rings $5
+					<br />
+					<img
+						src="https://burgerbites.be/wp-content/uploads/2020/03/onion-rings-scaled.jpg"
+					/>
+				</td>
+				<td>
+					Burger $12
+					<br />
+					<img
+						src="https://cdn.pixabay.com/photo/2022/08/29/17/44/burger-7419420_1280.jpg"
+					/>
+				</td>
+				<td>
+					Shakes $6
+					<br />
+					<img
+						src="https://thumbs.dreamstime.com/b/milkshakes-smoothies-277287715.jpg"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Fries $5
+					<br />
+					<img
+						src="https://www.thespruceeats.com/thmb/IHKuXcx3uUI1IWkM_cnnQdFH-zQ=/3485x2323/filters:fill(auto,1)/how-to-make-homemade-french-fries-2215971-hero-01-02f62a016f3e4aa4b41d0c27539885c3.jpg"
+					/>
+				</td>
+				<td>
+					Pizza $12
+					<br />
+					<img
+						src="https://thelistlove.com/wp-content/uploads/2014/12/dominos-pepperoni-pizza.jpg"
+					/>
+				</td>
+				<td>
+					Churros $2
+					<br />
+					<img
+						src="https://www.foodrepublic.com/img/gallery/the-murky-origins-of-churros-from-china-to-the-spanish-mountains/l-intro-1685466803.jpg"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Pretzels $5
+					<br />
+					<img
+						src="https://d.newsweek.com/en/full/1403550/pretzel-getty-images.jpg"
+					/>
+				</td>
+				<td>
+					Tenders $12
+					<br />
+					<img
+						src="https://www.jsonline.com/gcdn/presto/2022/11/07/PMJS/1113aa65-1a6e-4f26-98e2-406a5060218a-Buffalo_Tenders.png?crop=3246,1826,x1,y0&width=3200&height=1801&format=pjpg&auto=webp"
+					/>
+				</td>
+				<td>
+					Cookies $2
+					<br />
+					<img
+						src="https://glendaembree.com/wp-content/uploads/2022/08/small-batch-chocolate-chip-cookies-FEATURE.jpg"
+					/>
+				</td>
+			</tr>
+		</table>
 	</body>
 </html>
