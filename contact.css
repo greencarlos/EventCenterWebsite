@@ -4,6 +4,9 @@ body {
 ul {
 	list-style-type: none;
 }
+input {
+	width: 20%;
+}
 .list {
 	display: flex;
 	flex-direction: row;
