@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+}
+ul {
+	list-style-type: none;
+}
+.list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+@media screen and(max-width: 600px) {
+	body {
+		flex-direction: column;
+	}
+}
